@@ -9,7 +9,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 
-let invoices = [
+const invoices = [
   {
     tax: "CNSS QPP",
     rate: 13,
@@ -33,7 +33,7 @@ let invoices = [
 ];
 
 type TaxesEmployeurProps = {
-  totalEmployees: any;
+  totalEmployees: number;
   expat: boolean;
   RBI: number;
 };

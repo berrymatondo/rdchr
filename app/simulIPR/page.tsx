@@ -151,8 +151,8 @@ const SimulIPR = () => {
           +(rniUSD * 0.03).toFixed(2) > +ipr30USD
             ? ipr30USD
             : +(rniUSD * 0.03).toFixed(2),
-        ipr30: ipr30,
-        ipr30USD: ipr30USD,
+        ipr30: +ipr30,
+        ipr30USD: +ipr30USD,
         iprCalCDF: +(rni * 0.03).toFixed(2),
         iprCalUSD: +(rniUSD * 0.03).toFixed(2),
         tranche: "3%",
@@ -170,8 +170,8 @@ const SimulIPR = () => {
           +((4860 + (rni - 162000) * 0.15) / rate).toFixed(2) > +ipr30USD
             ? +ipr30USD
             : +((4860 + (rni - 162000) * 0.15) / rate).toFixed(2),
-        ipr30: ipr30,
-        ipr30USD: ipr30USD,
+        ipr30: +ipr30,
+        ipr30USD: +ipr30USD,
         tranche: "15%",
         iprCalCDF: +(4860 + (rni - 162000) * 0.15).toFixed(2),
         iprCalUSD: +((4860 + (rni - 162000) * 0.15) / rate).toFixed(2),
@@ -189,8 +189,8 @@ const SimulIPR = () => {
           +ipr30USD
             ? +ipr30USD
             : +((4860 + 245700 + (rni - 1800000) * 0.3) / rate).toFixed(2),
-        ipr30: ipr30,
-        ipr30USD: ipr30USD,
+        ipr30: +ipr30,
+        ipr30USD: +ipr30USD,
         tranche: "30%",
         iprCalCDF: +(4860 + 245700 + (rni - 1800000) * 0.3).toFixed(2),
         iprCalUSD: +((4860 + 245700 + (rni - 1800000) * 0.3) / rate).toFixed(2),
@@ -211,8 +211,8 @@ const SimulIPR = () => {
                 (4860 + 245700 + 540000 + (rni - 3600000) * 0.4) /
                 rate
               ).toFixed(2),
-        ipr30: ipr30,
-        ipr30USD: ipr30USD,
+        ipr30: +ipr30,
+        ipr30USD: +ipr30USD,
         tranche: "40%",
         iprCalCDF: +(4860 + 245700 + 540000 + (rni - 3600000) * 0.4).toFixed(2),
         iprCalUSD: +(
@@ -241,7 +241,7 @@ const SimulIPR = () => {
     const val = (+logement * 100) / +basisSalary;
 
     if (val <= 30) {
-      console.log("EXCES", exces);
+      // console.log("EXCES", exces);
       return {
         CDF: exces * rate,
         USD: exces,
@@ -251,7 +251,7 @@ const SimulIPR = () => {
     }
     exces = ((val - 30) * +basisSalary) / 100;
 
-    console.log("exces = ", exces);
+    //console.log("exces = ", exces);
 
     return {
       CDF: exces * rate,
@@ -968,7 +968,7 @@ const SimulIPR = () => {
                     </Badge>
                   </Label>
                   <Label className="flex items-center justify-end whitespace-nowrap text-neutral-500 text-xs">
-                    {formatAmount(buildIpr()?.iprUSD!, " USD")}
+                    {formatAmount(+buildIpr()?.iprUSD!, " USD")}
                   </Label>
                 </div>
               </div>
@@ -1028,7 +1028,7 @@ const SimulIPR = () => {
                               +basisSalary -
                                 /* +buildExcLog().USD -
                                 (+basisSalary + buildExcLog().USD) * 0.05 - */
-                                buildIpr()?.iprUSD! +
+                                +buildIpr()?.iprUSD! +
                                 +buildExcLog().logUSD +
                                 +transpo +
                                 +other,
