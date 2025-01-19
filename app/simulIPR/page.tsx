@@ -143,7 +143,7 @@ const SimulIPR = () => {
     const ipr30 = (rni * 0.3).toFixed(2);
     const ipr30USD = (rniUSD * 0.3).toFixed(2);
 
-    if (rni < 162001)
+    if (rni < 180001)
       return {
         ipr:
           +(rni * 0.03).toFixed(2) > +ipr30 ? +ipr30 : +(rni * 0.03).toFixed(2),
@@ -158,7 +158,7 @@ const SimulIPR = () => {
         tranche: "3%",
       };
 
-    if (rni > 162000 && rni < 1800001) {
+    if (rni > 180000 && rni < 1800001) {
       // /console.log("ipr", +(4860 + (rni - 162000) * 0.15).toFixed(2));
 
       return {
