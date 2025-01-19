@@ -262,7 +262,7 @@ const SimulIPR = () => {
   };
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col bg-sky-950">
       <p className="text-2xl text-center text-sky-900">
         Calculateur du Salaire Net
       </p>
@@ -272,11 +272,11 @@ const SimulIPR = () => {
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="space-y-8 md:container mx-auto md:py-10 bg-neutral-200 w-full p-2"
+          className="space-y-8 md:container mx-auto md:py-10 bg-sky-950 w-full p-2"
         >
           <div className="grid md:grid-cols-3 gap-2">
-            <div className="bg-white rounded-lg overflow-hidden">
-              <p className="font-semibold bg-sky-950 text-white text-center p-2  ">
+            <div className=" rounded-lg overflow-hidden border ">
+              <p className="font-semibold text-sky-950 bg-neutral-200/90 text-center p-2  border">
                 {" "}
                 Informations générales
               </p>
@@ -286,11 +286,11 @@ const SimulIPR = () => {
                 name="fullname"
                 render={({ field }) => (
                   <FormItem className="mb-2 mt-2 px-2">
-                    <div className="w-full flex items-center max-md:justify-between justify-end gap-2 ">
-                      <FormLabel className="max-md:w-1/3 text-sky-950 font-semibold">
+                    <div className=" text-white/80 w-full flex items-center max-md:justify-between justify-end gap-2 ">
+                      <FormLabel className="max-md:w-1/3 ">
                         Nom de l'employé(e)
                       </FormLabel>
-                      <FormControl className="w-full md:w-2/3">
+                      <FormControl className="w-full md:w-2/3 text-white font-semibold">
                         <Input
                           placeholder="Entrer le nom de l'employé(e)"
                           type="text"
@@ -309,11 +309,11 @@ const SimulIPR = () => {
                 render={({ field }) => {
                   return (
                     <FormItem className="mb-2 px-2">
-                      <div className="w-full flex items-center max-md:justify-between justify-end gap-2 ">
-                        <FormLabel className="max-md:w-1/3 text-sky-950 font-semibold">
+                      <div className="text-white/80 w-full flex items-center max-md:justify-between justify-end gap-2 ">
+                        <FormLabel className="max-md:w-1/3 ">
                           Nationalité
                         </FormLabel>
-                        <div className="w-full md:w-2/3">
+                        <div className="w-full md:w-2/3 text-white font-semibold">
                           <Select
                             onValueChange={field.onChange}
                             defaultValue={field.value}
@@ -343,11 +343,9 @@ const SimulIPR = () => {
                 render={({ field }) => {
                   return (
                     <FormItem className="mb-2 px-2">
-                      <div className="w-full flex items-center max-md:justify-between justify-end gap-2 ">
-                        <FormLabel className="max-md:w-1/3 text-sky-950 font-semibold">
-                          Grade
-                        </FormLabel>
-                        <div className="w-full md:w-2/3">
+                      <div className="text-white/80 w-full flex items-center max-md:justify-between justify-end gap-2 ">
+                        <FormLabel className="max-md:w-1/3 ">Grade</FormLabel>
+                        <div className="w-full md:w-2/3 text-white font-semibold">
                           <Select
                             onValueChange={field.onChange}
                             defaultValue={field.value}
@@ -376,11 +374,11 @@ const SimulIPR = () => {
                 name="totalEmployees"
                 render={({ field }) => (
                   <FormItem className="mb-2 px-2">
-                    <div className="w-full flex items-center max-md:justify-between justify-end gap-2 ">
-                      <FormLabel className="max-md:w-1/3 text-sky-950 font-semibold">
+                    <div className="text-white/80 w-full flex items-center max-md:justify-between justify-end gap-2 ">
+                      <FormLabel className="max-md:w-1/3 ">
                         Total employé(e)s
                       </FormLabel>
-                      <FormControl className="w-full md:w-2/3">
+                      <FormControl className="w-full md:w-2/3 text-white font-semibold">
                         <Input placeholder="shadcn" type="number" {...field} />
                       </FormControl>
                     </div>
@@ -395,11 +393,11 @@ const SimulIPR = () => {
                 name="rate"
                 render={({ field }) => (
                   <FormItem className="mb-2 px-2">
-                    <div className="w-full flex items-center max-md:justify-between justify-end gap-2">
-                      <FormLabel className="max-md:w-1/3 text-sky-950 font-semibold ">
+                    <div className="text-white/80 w-full flex items-center max-md:justify-between justify-end gap-2">
+                      <FormLabel className="max-md:w-1/3  ">
                         Taux USD/CDF
                       </FormLabel>
-                      <FormControl className="relative w-full md:w-2/3">
+                      <FormControl className="relative w-full md:w-2/3 text-white font-semibold">
                         <div className="relative">
                           <Input
                             placeholder="Entrer le taux USD/CDF"
