@@ -159,7 +159,7 @@ const SimulIPR = () => {
       };
 
     if (rni > 162000 && rni < 1800001) {
-      // console.log("ipr", +(4860 + (rni - 162000) * 0.15).toFixed(2));
+      // /console.log("ipr", +(4860 + (rni - 162000) * 0.15).toFixed(2));
 
       return {
         ipr:
