@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <div className="md:hidden  mx-auto container flex flex-col justify-center items-center">
-        <p className="md:w-1/2 text-white  text-4xl md:text-6xl text-center mx-2 mt-24 rounded-lg p-2">
+        <p className="md:w-1/2 text-white  text-4xl md:text-6xl text-center mx-2 mt-12 rounded-lg p-2">
           Calculateur de salaire brut vers net pour la RDC
         </p>
 
