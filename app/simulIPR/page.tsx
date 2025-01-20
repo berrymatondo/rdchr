@@ -276,7 +276,7 @@ const SimulIPR = () => {
         >
           <div className="grid md:grid-cols-3 gap-2">
             <div className=" rounded-lg overflow-hidden border ">
-              <p className="font-semibold text-sky-800 bg-sky-200 text-center p-2  border">
+              <p className="font-semibold text-sky-800 bg-sky-100 text-center p-2  border">
                 {" "}
                 Informations générales
               </p>
@@ -419,8 +419,8 @@ const SimulIPR = () => {
                 )}
               />
             </div>
-            <div className="bg-white rounded-lg overflow-hidden">
-              <p className="font-semibold bg-sky-950 text-white text-center p-2  ">
+            <div className=" rounded-lg overflow-hidden border ">
+              <p className="font-semibold text-sky-800 bg-sky-100 text-center p-2  border">
                 {" "}
                 Salaire, Transport et logement
               </p>
@@ -431,10 +431,10 @@ const SimulIPR = () => {
                 render={({ field }) => (
                   <FormItem className="mb-2 mt-2 px-2">
                     <div className="w-full flex items-center max-md:justify-between justify-end gap-2 ">
-                      <FormLabel className="max-md:w-1/3 text-sky-950 font-semibold ">
+                      <FormLabel className="max-md:w-1/3  text-sky-400 ">
                         Salaire de base
                       </FormLabel>
-                      <FormControl className="relative w-full md:w-2/3">
+                      <FormControl className="relative w-full md:w-2/3  text-white font-semibold">
                         <div className="relative">
                           <Input
                             placeholder="Entrer le salaire de base"
@@ -459,10 +459,10 @@ const SimulIPR = () => {
                 render={({ field }) => (
                   <FormItem className="mb-2 mt-2 px-2">
                     <div className="w-full flex items-center max-md:justify-between justify-end gap-2">
-                      <FormLabel className="max-md:w-1/3 text-sky-950 font-semibold ">
+                      <FormLabel className="max-md:w-1/3  text-sky-400  ">
                         Logement
                       </FormLabel>
-                      <FormControl className="relative w-full md:w-2/3">
+                      <FormControl className="relative w-full md:w-2/3   text-white font-semibold">
                         <div className="relative">
                           <Input
                             placeholder="Entrer la participation au logement"
@@ -488,10 +488,10 @@ const SimulIPR = () => {
                 render={({ field }) => (
                   <FormItem className="mb-2 mt-2 px-2">
                     <div className="w-full flex items-center max-md:justify-between justify-end gap-2">
-                      <FormLabel className="max-md:w-1/3 text-sky-950 font-semibold ">
+                      <FormLabel className="max-md:w-1/3  text-sky-400 ">
                         Frais médicaux, ...
                       </FormLabel>
-                      <FormControl className="relative w-full md:w-2/3">
+                      <FormControl className="relative w-full md:w-2/3   text-white font-semibold">
                         <div className="relative">
                           <Input
                             placeholder="Entrer la participation au logement"
@@ -622,8 +622,8 @@ const SimulIPR = () => {
                 )}
               /> */}
             </div>
-            <div className="bg-white rounded-lg overflow-hidden">
-              <p className="font-semibold bg-sky-950 text-white text-center p-2  ">
+            <div className=" rounded-lg overflow-hidden border ">
+              <p className="font-semibold text-sky-800 bg-sky-100 text-center p-2  border">
                 {" "}
                 Charges familiales
               </p>
@@ -634,10 +634,10 @@ const SimulIPR = () => {
                 render={({ field }) => (
                   <FormItem className="mb-2 mt-2 px-2">
                     <div className="w-full flex items-center max-md:justify-between justify-end gap-2">
-                      <FormLabel className="max-md:w-1/3 text-sky-950 font-semibold ">
+                      <FormLabel className="max-md:w-1/3 text-sky-400 ">
                         Personnnes à charge{" "}
                       </FormLabel>
-                      <div className="w-full md:w-2/3">
+                      <div className="w-full md:w-2/3 text-white font-semibold">
                         <Select
                           onValueChange={field.onChange}
                           defaultValue={field.value}
@@ -662,8 +662,8 @@ const SimulIPR = () => {
               />
             </div>
 
-            <div className="bg-white rounded-lg overflow-hidden">
-              <p className="font-semibold bg-sky-950 text-white text-center p-2  ">
+            <div className=" rounded-lg overflow-hidden border ">
+              <p className="font-semibold text-sky-800 bg-sky-100 text-center p-2  border">
                 {" "}
                 Allocations et bonus
               </p>
@@ -674,10 +674,10 @@ const SimulIPR = () => {
                 render={({ field }) => (
                   <FormItem className="mb-2 mt-2 px-2">
                     <div className="w-full flex items-center max-md:justify-between justify-end gap-2">
-                      <FormLabel className="max-md:w-1/3 text-sky-950 font-semibold ">
+                      <FormLabel className="max-md:w-1/3 text-sky-400  ">
                         Allocations et bonus
                       </FormLabel>
-                      <div className="w-full md:w-2/3">
+                      <div className="w-full md:w-2/3  text-white font-semibold">
                         <Select
                           onValueChange={field.onChange}
                           defaultValue={field.value}
@@ -702,8 +702,8 @@ const SimulIPR = () => {
               />
             </div>
 
-            <div className="bg-white rounded-lg overflow-hidden">
-              <p className="font-semibold bg-gray-100 text-center p-2 text-blue-950  ">
+            <div className=" rounded-lg overflow-hidden border ">
+              <p className="font-semibold text-sky-800 bg-sky-100 text-center p-2  border">
                 {" "}
                 Salaire Employé(e)
               </p>
@@ -799,11 +799,11 @@ const SimulIPR = () => {
               /> */}
 
               <div className="mb-2 mt-2 p-2 w-full flex items-center max-md:justify-between justify-end gap-2">
-                <Label className="max-md:w-1/3 text-sky-950 ">
+                <Label className="max-md:w-1/3  text-sky-400 ">
                   Salaire de base
                 </Label>
                 <div className="w-full md:w-2/3 grid grid-cols-3 gap-2">
-                  <Label className="col-span-2 flex items-center justify-end whitespace-nowrap font-semibold text-blue-950">
+                  <Label className="col-span-2 flex items-center justify-end whitespace-nowrap font-semibold  text-white">
                     {formatAmount(basisSalary * rate, " CDF")}
                   </Label>
                   <Label className="flex items-center justify-end whitespace-nowrap text-neutral-500 text-xs">
@@ -892,11 +892,11 @@ const SimulIPR = () => {
                 )}
               </div>
               <div className="mb-2 mt-2 p-2 w-full flex items-center max-md:justify-between justify-end gap-2">
-                <Label className="max-md:w-1/3 text-sky-950 ">
+                <Label className="max-md:w-1/3  text-sky-400 ">
                   Revenu Brut
                 </Label>
                 <div className="w-full md:w-2/3 grid grid-cols-3 gap-2">
-                  <Label className="col-span-2 flex items-center justify-end whitespace-nowrap font-semibold text-blue-950">
+                  <Label className="col-span-2 flex items-center justify-end whitespace-nowrap font-semibold text-white">
                     {formatAmount(buildRB().rbCDF, " CDF")}
                   </Label>
                   <Label className="flex items-center justify-end whitespace-nowrap text-neutral-500 text-xs">
@@ -906,11 +906,11 @@ const SimulIPR = () => {
               </div>
 
               <div className="mb-2 mt-2 p-2 w-full flex items-center max-md:justify-between justify-end gap-2">
-                <Label className="max-md:w-1/3 text-sky-950 ">
+                <Label className="max-md:w-1/3  text-sky-400 ">
                   Rev. Brut Impo.
                 </Label>
                 <div className="w-full md:w-2/3 grid grid-cols-3 gap-2">
-                  <Label className="col-span-2 flex items-center justify-end whitespace-nowrap font-semibold text-blue-950">
+                  <Label className="col-span-2 flex items-center justify-end whitespace-nowrap font-semibold text-white">
                     {formatAmount(
                       +basisSalary * rate + +buildExcLog().CDF,
                       " CDF"
@@ -923,9 +923,9 @@ const SimulIPR = () => {
               </div>
 
               <div className="mb-2 p-2 w-full flex items-center max-md:justify-between justify-end gap-2">
-                <Label className="max-md:w-1/3 text-sky-950 ">CNSS QPO</Label>
+                <Label className="max-md:w-1/3  text-sky-400 ">CNSS QPO</Label>
                 <div className="w-full md:w-2/3 grid grid-cols-3 gap-2">
-                  <Label className="col-span-2 flex items-center justify-end whitespace-nowrap font-semibold text-blue-950">
+                  <Label className="col-span-2 flex items-center justify-end whitespace-nowrap font-semibold text-white">
                     {formatAmount(basisSalary * cnss_qpo * rate, " CDF")}
                   </Label>
                   <Label className="flex items-center justify-end whitespace-nowrap text-neutral-500 text-xs">
@@ -935,11 +935,11 @@ const SimulIPR = () => {
               </div>
 
               <div className="mb-2  p-2 w-full flex items-center max-md:justify-between justify-end gap-2">
-                <Label className="max-md:w-1/3 text-sky-950 ">
+                <Label className="max-md:w-1/3  text-sky-400  ">
                   Rev. Net Impo.
                 </Label>
                 <div className="w-full md:w-2/3 grid grid-cols-3 gap-2">
-                  <Label className="col-span-2 flex items-center justify-end whitespace-nowrap font-semibold text-blue-950">
+                  <Label className="col-span-2 flex items-center justify-end whitespace-nowrap font-semibold text-white">
                     {formatAmount(
                       (+basisSalary +
                         +buildExcLog().CDF -
@@ -960,7 +960,7 @@ const SimulIPR = () => {
               </div>
 
               <div className="mb-2 p-2 w-full flex items-center max-md:justify-between justify-end gap-2">
-                <Label className="max-md:w-1/3 text-sky-950 ">I.P.R.</Label>
+                <Label className="max-md:w-1/3  text-sky-400 ">I.P.R.</Label>
                 <div className="w-full md:w-2/3 grid grid-cols-3 gap-2">
                   <Label className="col-span-2 flex items-center justify-end whitespace-nowrap font-semibold text-blue-950">
                     <Badge className="bg-sky-900">
@@ -1044,8 +1044,8 @@ const SimulIPR = () => {
               />
             </div>
 
-            <div className="bg-white rounded-lg overflow-hidden">
-              <p className="font-semibold bg-sky-950 text-white text-center p-2  ">
+            <div className=" rounded-lg overflow-hidden border ">
+              <p className="font-semibold text-sky-800 bg-sky-100 text-center p-2  border">
                 {" "}
                 Taxes employeur
               </p>

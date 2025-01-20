@@ -95,11 +95,15 @@ const TaxesEmployeur = ({
       <TableBody>
         {invoices.map((invoice) => (
           <TableRow key={invoice.tax}>
-            <TableCell className="font-medium">{invoice.tax}</TableCell>
-            <TableCell className="font-semibold text-sky-800">
+            <TableCell className="font-medium  text-sky-400 ">
+              {invoice.tax}
+            </TableCell>
+            <TableCell className="font-semibold text-white">
               {invoice.rate} %
             </TableCell>
-            <TableCell className="text-right">$ {invoice.amount}</TableCell>
+            <TableCell className="text-right  font-semibold text-white ">
+              $ {invoice.amount}
+            </TableCell>
           </TableRow>
         ))}
       </TableBody>

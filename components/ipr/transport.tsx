@@ -30,14 +30,18 @@ const Transport = ({ trans }: TransportProps) => {
         <TableBody>
           {trans.map((invoice: any) => (
             <TableRow key={invoice.typeVehicule}>
-              <TableCell className="font-medium">
+              <TableCell className="font-medium text-sky-400">
                 {invoice.typeVehicule}
               </TableCell>
-              <TableCell>{invoice.coutCourse} USD</TableCell>
-              <TableCell>{invoice.nbrCourses}</TableCell>
-              <TableCell>{invoice.nbrCourses * invoice.coutCourse} $</TableCell>
-              <TableCell className="text-right">
-                {invoice.nbrCourses * invoice.coutCourse * 26} USD
+              <TableCell className="text-white">
+                {invoice.coutCourse} $
+              </TableCell>
+              <TableCell className="text-white">{invoice.nbrCourses}</TableCell>
+              <TableCell className="text-white">
+                {invoice.nbrCourses * invoice.coutCourse} $
+              </TableCell>
+              <TableCell className="text-right text-white font-semibold">
+                {invoice.nbrCourses * invoice.coutCourse * 26} $
               </TableCell>
             </TableRow>
           ))}
