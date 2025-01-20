@@ -27,7 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         /*         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-         */ className="bg-sky-950"
+         */ className="bg-[#0e172a]"
       >
         {/*         <div>
           <Link href="/" className="bg-red-600 font-bold">
