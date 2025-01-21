@@ -13,7 +13,7 @@ type TransportProps = {
 };
 const Transport = ({ trans }: TransportProps) => {
   return (
-    <div>
+    <div className="px-2">
       <FormLabel className=" mx-2 max-md:w-1/3 text-sky-950 font-semibold ">
         Transport
       </FormLabel>

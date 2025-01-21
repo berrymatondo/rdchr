@@ -272,10 +272,10 @@ const SimulIPR = () => {
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="space-y-8 md:container mx-auto md:py-10 bg-[#1d293b] w-full p-2"
+          className="space-y-8 md:container mx-auto md:py-10  w-full p-2"
         >
           <div className="grid md:grid-cols-3 gap-2">
-            <div className=" rounded-lg overflow-hidden border ">
+            <div className=" rounded-lg overflow-hidden  bg-[#0a343d] ">
               <p className="font-semibold text-sky-800 bg-sky-100 text-center p-2  border">
                 {" "}
                 Informations générales
@@ -287,7 +287,7 @@ const SimulIPR = () => {
                 render={({ field }) => (
                   <FormItem className="mb-2 mt-2 px-2">
                     <div className=" text-white/80 w-full flex items-center max-md:justify-between justify-end gap-2 ">
-                      <FormLabel className="max-md:w-1/3 text-sky-400 ">
+                      <FormLabel className="max-md:w-1/3 text-sky-400 whitespace-break- ">
                         Nom de l'employé(e)
                       </FormLabel>
                       <FormControl className="w-full md:w-2/3 text-white font-semibold">
@@ -295,6 +295,7 @@ const SimulIPR = () => {
                           placeholder="Entrer le nom de l'employé(e)"
                           type="text"
                           {...field}
+                          className="border-none bg-[#0e172a]"
                         />
                       </FormControl>
                     </div>
@@ -381,7 +382,12 @@ const SimulIPR = () => {
                         Total employé(e)s
                       </FormLabel>
                       <FormControl className="w-full md:w-2/3 text-white font-semibold">
-                        <Input placeholder="shadcn" type="number" {...field} />
+                        <Input
+                          placeholder="shadcn"
+                          type="number"
+                          {...field}
+                          className="border-none bg-[#0e172a]"
+                        />
                       </FormControl>
                     </div>
 
@@ -406,6 +412,7 @@ const SimulIPR = () => {
                             type="number"
                             step={0.1}
                             {...field}
+                            className="border-none bg-[#0e172a]"
                           />
                           {/*               <p className="absolute top-1/2 left-1/2 transform  -translate-y-1/2 text-neutral-400">
                             CDF
@@ -419,7 +426,7 @@ const SimulIPR = () => {
                 )}
               />
             </div>
-            <div className=" rounded-lg overflow-hidden border ">
+            <div className=" rounded-lg overflow-hidden   bg-[#0a343d] ">
               <p className="font-semibold text-sky-800 bg-sky-100 text-center p-2  border">
                 {" "}
                 Salaire, Transport et logement
@@ -441,6 +448,7 @@ const SimulIPR = () => {
                             type="number"
                             step={0.1}
                             {...field}
+                            className="border-none bg-[#0e172a]"
                           />
                           <p className="absolute top-1/2 left-1/2 transform  -translate-y-1/2 text-neutral-400">
                             USD
@@ -469,6 +477,7 @@ const SimulIPR = () => {
                             type="number"
                             step={0.1}
                             {...field}
+                            className="border-none bg-[#0e172a]"
                           />
                           <p className="absolute top-1/2 left-1/2 transform  -translate-y-1/2 text-neutral-400">
                             USD
@@ -498,6 +507,7 @@ const SimulIPR = () => {
                             type="number"
                             step={0.1}
                             {...field}
+                            className="border-none bg-[#0e172a]"
                           />
                           <p className="absolute top-1/2 left-1/2 transform  -translate-y-1/2 text-neutral-400">
                             USD
@@ -512,115 +522,6 @@ const SimulIPR = () => {
               />
 
               <Transport trans={trans} />
-
-              {/*               <FormField
-                control={form.control}
-                name="fullname"
-                render={({ field }) => (
-                  <FormItem className="mb-2 px-2">
-                    <div className="w-full flex items-center max-md:justify-between justify-end gap-2 ">
-                      <FormLabel className="max-md:w-1/3 text-sky-950 font-semibold">
-                        Nom de l'employé(e)
-                      </FormLabel>
-                      <FormControl className="w-full md:w-2/3">
-                        <Input
-                          placeholder="Entrer le nom de l'employé(e)"
-                          type="text"
-                          {...field}
-                        />
-                      </FormControl>
-                    </div>
-                    <FormMessage className="text-center " />
-                  </FormItem>
-                )}
-              />
-
-              <FormField
-                control={form.control}
-                name="nationalite"
-                render={({ field }) => {
-                  return (
-                    <FormItem className="mb-2 px-2">
-                      <div className="w-full flex items-center max-md:justify-between justify-end gap-2 ">
-                        <FormLabel className="max-md:w-1/3 text-sky-950 font-semibold">
-                          Nationalité
-                        </FormLabel>
-                        <div className="w-full md:w-2/3">
-                          <Select
-                            onValueChange={field.onChange}
-                            defaultValue={field.value}
-                          >
-                            <SelectTrigger id="framework">
-                              <SelectValue placeholder="Sélectionner la nationalité" />
-                            </SelectTrigger>
-                            <SelectContent position="popper" className="">
-                              {nationalites?.map((ur: any) => (
-                                <SelectItem key={ur.id} value={ur.label}>
-                                  {ur.label}
-                                </SelectItem>
-                              ))}
-                            </SelectContent>
-                          </Select>
-                        </div>
-                      </div>
-                      <FormMessage className="text-center " />
-                    </FormItem>
-                  );
-                }}
-              />
-
-              <FormField
-                control={form.control}
-                name="grade"
-                render={({ field }) => {
-                  return (
-                    <FormItem className="mb-2 px-2">
-                      <div className="w-full flex items-center max-md:justify-between justify-end gap-2 ">
-                        <FormLabel className="max-md:w-1/3 text-sky-950 font-semibold">
-                          Grade
-                        </FormLabel>
-                        <div className="w-full md:w-2/3">
-                          <Select
-                            onValueChange={field.onChange}
-                            defaultValue={field.value}
-                          >
-                            <SelectTrigger id="framework">
-                              <SelectValue placeholder="Sélectionner un grade" />
-                            </SelectTrigger>
-                            <SelectContent position="popper" className="">
-                              {grades?.map((ur: any) => (
-                                <SelectItem key={ur.id} value={ur.label}>
-                                  {ur.label}
-                                </SelectItem>
-                              ))}
-                            </SelectContent>
-                          </Select>
-                        </div>
-                      </div>
-                      <FormMessage className="text-center " />
-                    </FormItem>
-                  );
-                }}
-              />
-
-              <FormField
-                control={form.control}
-                name="totalEmployees"
-                render={({ field }) => (
-                  <FormItem className="mb-2 px-2">
-                    <div className="w-full flex items-center max-md:justify-between justify-end gap-2 ">
-                      <FormLabel className="max-md:w-1/3 text-sky-950 font-semibold">
-                        Total employé(e)s
-                      </FormLabel>
-                      <FormControl className="w-full md:w-2/3">
-                        <Input placeholder="shadcn" type="number" {...field} />
-                      </FormControl>
-                    </div>
-
-                    <FormMessage className="text-center " />
-                  </FormItem>
-                )}
-              /> */}
             </div>
             <div className=" rounded-lg overflow-hidden border ">
               <p className="font-semibold text-sky-800 bg-sky-100 text-center p-2  border">
