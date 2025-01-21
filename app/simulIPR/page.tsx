@@ -412,7 +412,7 @@ const SimulIPR = () => {
                             type="number"
                             step={0.1}
                             {...field}
-                            className="border-none bg-[#0e172a]"
+                            className="border border-neutral-700  bg-[#0e172a]"
                           />
                           {/*               <p className="absolute top-1/2 left-1/2 transform  -translate-y-1/2 text-neutral-400">
                             CDF
@@ -426,7 +426,7 @@ const SimulIPR = () => {
                 )}
               />
             </div>
-            <div className=" rounded-lg overflow-hidden bg-white/20 ">
+            <div className=" rounded-lg overflow-hidden  border-2 border-neutral-700  ">
               <p className="font-semibold text-sky-800 bg-sky-100 text-center p-2  border">
                 {" "}
                 Salaire, Transport et logement
@@ -448,7 +448,7 @@ const SimulIPR = () => {
                             type="number"
                             step={0.1}
                             {...field}
-                            className="border-none bg-[#0e172a]"
+                            className="border border-neutral-700  bg-[#0e172a]"
                           />
                           <p className="absolute top-1/2 left-1/2 transform  -translate-y-1/2 text-neutral-400">
                             USD
@@ -477,7 +477,7 @@ const SimulIPR = () => {
                             type="number"
                             step={0.1}
                             {...field}
-                            className="border-none bg-[#0e172a]"
+                            className="border border-neutral-700  bg-[#0e172a]"
                           />
                           <p className="absolute top-1/2 left-1/2 transform  -translate-y-1/2 text-neutral-400">
                             USD
@@ -507,7 +507,7 @@ const SimulIPR = () => {
                             type="number"
                             step={0.1}
                             {...field}
-                            className="border-none bg-[#0e172a]"
+                            className="border border-neutral-700  bg-[#0e172a]"
                           />
                           <p className="absolute top-1/2 left-1/2 transform  -translate-y-1/2 text-neutral-400">
                             USD
@@ -523,7 +523,7 @@ const SimulIPR = () => {
 
               <Transport trans={trans} />
             </div>
-            <div className=" rounded-lg overflow-hidden border ">
+            <div className=" rounded-lg overflow-hidden  border-2 border-neutral-700  ">
               <p className="font-semibold text-sky-800 bg-sky-100 text-center p-2  border">
                 {" "}
                 Charges familiales
@@ -563,7 +563,7 @@ const SimulIPR = () => {
               />
             </div>
 
-            <div className=" rounded-lg overflow-hidden border ">
+            <div className=" rounded-lg overflow-hidden  border-2 border-neutral-700  ">
               <p className="font-semibold text-sky-800 bg-sky-100 text-center p-2  border">
                 {" "}
                 Allocations et bonus
@@ -603,7 +603,7 @@ const SimulIPR = () => {
               />
             </div>
 
-            <div className=" rounded-lg overflow-hidden border ">
+            <div className=" rounded-lg overflow-hidden  border-2 border-neutral-700  ">
               <p className="font-semibold text-sky-800 bg-sky-100 text-center p-2  border">
                 {" "}
                 Salaire Employé(e)
