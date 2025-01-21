@@ -275,7 +275,7 @@ const SimulIPR = () => {
           className="space-y-8 md:container mx-auto md:py-10  w-full p-2"
         >
           <div className="grid md:grid-cols-3 gap-2">
-            <div className=" rounded-lg overflow-hidden  bg-[#0a343d] ">
+            <div className=" rounded-lg overflow-hidden border-2 border-neutral-700 ">
               <p className="font-semibold text-sky-800 bg-sky-100 text-center p-2  border">
                 {" "}
                 Informations générales
@@ -295,7 +295,7 @@ const SimulIPR = () => {
                           placeholder="Entrer le nom de l'employé(e)"
                           type="text"
                           {...field}
-                          className="border-none bg-[#0e172a]"
+                          className="border border-neutral-700  bg-[#0e172a]"
                         />
                       </FormControl>
                     </div>
@@ -386,7 +386,7 @@ const SimulIPR = () => {
                           placeholder="shadcn"
                           type="number"
                           {...field}
-                          className="border-none bg-[#0e172a]"
+                          className="border border-neutral-700  bg-[#0e172a]"
                         />
                       </FormControl>
                     </div>
@@ -945,7 +945,7 @@ const SimulIPR = () => {
               />
             </div>
 
-            <div className=" rounded-lg overflow-hidden border ">
+            <div className=" rounded-lg overflow-hidden border-2 border-neutral-700 ">
               <p className="font-semibold text-sky-800 bg-sky-100 text-center p-2  border">
                 {" "}
                 Taxes employeur
