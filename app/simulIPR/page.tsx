@@ -57,8 +57,8 @@ const SimulIPR = () => {
     resolver: zodResolver(simulFormSchema),
     defaultValues: {
       fullname: "",
-      nationalite: "1",
-      grade: "1",
+      //  nationalite: "1",
+      //  grade: "1",
       totalEmployees: 1,
       rate: 2833.1,
       logement: 0,
@@ -426,7 +426,7 @@ const SimulIPR = () => {
                 )}
               />
             </div>
-            <div className=" rounded-lg overflow-hidden   bg-[#0a343d] ">
+            <div className=" rounded-lg overflow-hidden bg-white/20 ">
               <p className="font-semibold text-sky-800 bg-sky-100 text-center p-2  border">
                 {" "}
                 Salaire, Transport et logement
