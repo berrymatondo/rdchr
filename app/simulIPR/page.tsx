@@ -95,14 +95,16 @@ const SimulIPR = () => {
   let rate = form.watch("rate");
 
   useEffect(() => {
-    if (grade == "Cadre") {
+    console.log("Grade", grade);
+
+    if (grade == "1") {
       trans.forEach((tr: any) => {
         if (tr.grade === "Cadre") {
           setTranspo(tr.coutCourse * tr.nbrCourses * 26);
         }
       });
     } else {
-      if (grade === "Autre") {
+      if (grade === "2") {
         trans.forEach((tr: any) => {
           if (tr.grade === "Autre") {
             setTranspo(tr.coutCourse * tr.nbrCourses * 26);
