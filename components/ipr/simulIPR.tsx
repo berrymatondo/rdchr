@@ -322,6 +322,7 @@ const SimulIPR = ({
       <div className="my-1 bg-slate-200 flex gap-2">
         <Link href="/">Home</Link>
         <Link href="/parameters">Paramètres</Link>
+        <Link href="/home">New Home</Link>
       </div>
       <Form {...form}>
         <form

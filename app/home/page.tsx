@@ -1,11 +1,16 @@
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
+import Link from "next/link";
 
 import React from "react";
 
 const HomePage = () => {
   return (
     <div className="max-w-5xl mx-auto px-8">
+      <Link href="/">Home</Link>
+      <Link href="/parameters">Paramètres</Link>
+      <Link href="/simulIPR">Simulation</Link>
+
       <HoverEffect items={projects} />
 
       <div className="h-[40rem] rounded-md flex flex-col antialiased bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
