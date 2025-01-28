@@ -2,27 +2,19 @@ import { Label } from "@/components/ui/label";
 import Image from "next/image";
 import Link from "next/link";
 import final from "../public/final.jpg";
+import ButtonSimul from "@/components/buttonSimul";
 
 export default function Home() {
   return (
     <>
       <div className="md:hidden  mx-auto container flex flex-col justify-center items-center">
-        <p className="md:w-1/2 text-white  text-4xl md:text-6xl text-center mx-2 mt-12 rounded-lg p-2">
+        {/*         <p className="md:w-1/2 text-white  text-4xl md:text-6xl text-center mx-2 mt-12 rounded-lg p-2">
           Calculateur de salaire brut vers net pour la RDC
-        </p>
+        </p> */}
 
-        <div className=" px-2 my-4">
-          <Image alt="bg" src={final} className="rounded-lg mx-auto" />
-        </div>
+        <ButtonSimul />
+        <ButtonSimul />
 
-        <div className="flex justify-center">
-          <Link
-            className="rounded-full bg-sky-600 hover:bg-sky-400 text-center py-4 px-8 text-2xl text-white"
-            href="/simulIPR"
-          >
-            Démarrez
-          </Link>
-        </div>
         <div className="flex justify-center px-2 ">
           <p className="rounded-lg bg-white/10 md:w-1/3 text-white/60 p-2 text-center my-8 max-md:text-sm">
             {

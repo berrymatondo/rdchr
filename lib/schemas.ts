@@ -58,11 +58,11 @@ export const simulFormSchema = z.object({
     // z.number().positive({ message: "Le nombre doit être supérieur à 0" }) // Valide les nombres positifs (entiers ou décimaux)
   ),
 
-  RB: z.preprocess(
+  nbrCourses: z.preprocess(
     (val) => parseFloat(val as string), // Convertit les entrées en nombre
     z
       .number()
-      .min(1, { message: "Le nombre d'employés doit être un entier >= 0" })
+      .min(1, { message: "Le nombre de courses doit être un entier >= 0" })
     // z.number().positive({ message: "Le nombre doit être supérieur à 0" }) // Valide les nombres positifs (entiers ou décimaux)
   ),
 });
