@@ -21,7 +21,7 @@ const HomePage = () => {
 
 export default HomePage;
 
-export const projects = [
+const projects = [
   {
     title: "Calculateur Salaire Net",
     description:

@@ -6,17 +6,15 @@ import Link from "next/link";
 import { useState } from "react";
 import final from "../../public/final.jpg";
 
-export const HoverEffect = ({
-  items,
-  className,
-}: {
+type HoverEffectProps = {
   items: {
     title: string;
     description: string;
     link: string;
   }[];
   className?: string;
-}) => {
+};
+export const HoverEffect = ({ items, className }: HoverEffectProps) => {
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
